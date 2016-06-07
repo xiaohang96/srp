@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>手机详细页</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/detail.css">
+	<script type="text/javascript" charset="gb2312" src="js/setHomeSetFav.js"></script>
+	<script type="text/javascript" src="js/myfocus-2.0.1.min.js" charset="utf-8"></script><!--引入myFocus库-->
+	 <script src="http://www.imooc.com/data/jquery-1.8.2.min.js" type="text/javascript"></script>
+<script src="http://www.imooc.com/data/jquery-ui-1.9.2.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/Chart.js"></script>
+</head>
+<body>
+<div class="top">
+	<div class="top_content">
+		<ul>
+		    <li><a href="#" >联系我们</a></li>
+			<li><a href="#" onclick="AddFavorite(window.location,document.title">加入收藏</a></li>
+			<li><a href="#" onclick="SetHome(window.location)">设为首页</a></li>
+		</ul>
+	</div>
+</div> <!--top结束-->
+<div class="wrap">
+	<div class="logo">
+		<div class="logo_left">
+		电商质量报告网站
+		</div>
+		<div class="logo_right">
+			<img src="images/tel.jpg" alt="服务热线"> 24小时服务热线:<span class="tel">123-456-7890</span>
+		</div>
+	</div>   <!--logo结束-->
+<div class="nav">
+	<div class="nav_left"></div>
+    <div class="nav_mid ">
+    	<div class="nav_mid_left">
+    	  <ul>
+    	  	<li><a href="#">商城首页</a></li>
+          <li><a href="list.html">新品</a></li>
+          <li><a href="list.html">家电</a></li>
+          <li><a href="list.html">手机</a></li>
+          <li><a href="list.html">特惠</a></li>
+          <li><a href="list.html">酷玩</a></li>
+    	  </ul>
+    	</div>
+        <div class="nav_mid_right">
+        	<form action="" method="post">
+        		<input type="text" class="search_text" />
+        	</form>
+        </div>
+    </div>
+    <div class="nav_right"></div>
+</div> <!--nav结束-->
+<div class="userposition">
+	<strong><a href="#">首页</a></strong>
+	<span>&nbsp;>&nbsp;</span>
+	<a href="#">平板电脑</a>
+	<span>&nbsp;>&nbsp;</span>
+	<em>MD531CH</em>
+</div>
+<div class="description">
+	<div class="leftarea">
+      <div class="big">
+      	<img src="images/des_big.jpg">
+      </div>
+      <ul class="des">
+      	<li>
+      		<a href="#">
+      		  <img src="images/des_sm.jpg" class="active" alt=""> 
+      		</a>
+      	</li>
+      <li>
+      		<a href="#">
+      		  <img src="images/des_sm2.jpg" alt=""> 
+      		</a>
+      	</li>
+      	<li>
+      		<a href="#">
+      		  <img src="images/des_sm.jpg"  alt=""> 
+      		</a>
+      	</li>
+      	<li>
+      		<a href="#">
+      		  <img src="images/des_sm2.jpg"  alt=""> 
+      		</a>
+      	</li>
+      	<li>
+      		<a href="#">
+      		  <img src="images/des_sm.jpg" alt=""> 
+      		</a>
+      	</li>
+      </ul>
+      </div>
+	<div class="rightarea">
+		<div class="des_content">
+			<h3 class="des_content_tit">全网底价 Apple 苹果 iPad mini 16G wifi版 平板电脑 前白后银 MD531CH/A 银白两色生
+             产批次不同混合发货</h3>
+             <div class="dl">
+             	<div class="dt">京东价</div>
+             	<div class="dd">
+             		<span class="des_money">
+             			<em>$</em>
+             			999.00
+             		</span>
+             	</div>
+             </div>
+             <p class="sub_title">一入4G深似海，从此3G是路人</p>
+		    <div class="meta">
+		    	<span>分类:<a href="#" target="_blamnk" >Ipad</a></span>
+		    	<span>品牌:<a href="#" target="_blamnk" >Apple/苹果</a></span>
+		    </div>
+		    <div class="buy">
+		    	<a href="http://item.jd.com/1892003.html">直达链接></a>
+		    </div>
+		    <div class="bigbox clearfix">
+		    <div class="link_box ">
+		    	<div class="link_button" id="link_button">
+                   <a href="#">
+		    		<span class="tuijian" id="tuijian">
+		    			值得买
+		    			<em id="tuijian2">189</em>
+		    		</span>
+		    		</a>
+		    	</div>	
+		    	</div>
+		    	<div class="operate_box">
+		    		<img src="images/collection.jpg">
+		    		<span>
+		    			收藏
+		    			57
+		    			人气
+		    		</span>
+		    		分享
+		    	</div>	    		
+		    
+		    </div>
+	</div>
+    </div>
+</div><!--description结束-->
+<div class="des_info clearfix">
+	<div class="leftarea"></div>
+	<div class="rightarea">
+		<div class="des_infocontent">
+		<div class="tabs">
+			<ul class="tab_nav clearfix ">
+				<li class="titles current" id="1">
+					<a href="#tab_content1">值友点评3</a>
+				</li>
+				<li class="titles" id="2">
+					<a href="#tabs_content2">价格参考</a>
+				</li>
+				<li class="titles" id="3">
+					<a href="#tabs_content3">质检报告</a>
+				</li>
+				<li  class="titles " id="4">
+					<a href="#tabs_content4">商品参数</a>
+				</li>
+				<li class="titles " id="5">
+					<a href="#tabs_content5">相关资讯</a>
+				</li>
+			</ul>
+			
+			<div class="tab_content1 "  id="tab_content1" >
+             <div class="chart fl">
+             <span>评论来源图</span>
+			 <canvas id="canvas_circle" width="400" height="250"  >  
+                浏览器不支持canvas  
+            </canvas>  
+            </div> 
+            <div class="chart fl">
+             <span>评论百分比图</span>
+            <canvas id="canvas" height="250" width="500"></canvas>
+            </div>
+              <div class="chart fl">
+             <span>点击率折线图</span>
+            <canvas id="canvas2" height="250" width="800"></canvas>
+            </div>
+			<div class="product-comment-words">
+				<ul>
+					<li class="good-words">
+						<a href="#">运行流畅</a>
+						<a href="#">手机外观好看</a>
+						<a href="#">价格实惠</a>
+					</li>
+					<li class="bad-goods">
+						<a href="#">型号差</a>
+						<a href="#">外观难看</a>
+						<a href="#">电池容量小</a>
+					</li>
+				</ul>
+			</div>
+			     <div class="check_box">
+			     	<form>
+                           按时间排序：
+                        <input type="radio" checked="checked" name="time" value="time" />
+                       <br />
+                      按热度排序：
+                        <input type="radio" name="time" value="re" />
+                    </form>
+			     </div>
+			     <div class="short_comments">
+				<div class="item_user_info">
+					<a href="http://zhiyou.smzdm.com/member/8238402428" class="uesr_avatar_small lfloat">
+						<img src="http://avatarimg.smzdm.com/default/8238402428/56cc259126bbd-small.jpg"
+						width="40px" height="40px">
+					</a>
+					<a href="http://zhiyou.smzdm.com/member/8238402428"
+					class="lfloat nick_name">用户名</a>
+					
+					<div class="lfloat identify">
+						<a href="#">
+							<i class="icon-metal"></i>
+						</a>
+					</div>
+					<div class="time">2015-9-24</div>
+				</div>
+				<div class="margin_b_10 clearfix">
+					<div class="star_box">
+						<img src="images/collection.jpg">
+						<img src="images/collection.jpg">
+						<img src="images/collection.jpg">
+						<img src="images/collection.jpg">
+						<img src="images/collection.jpg">
+						<img src="images/collection.jpg">
+					</div>
+					<div class="star_status">力荐 使用时长 ：<span>短暂体验</span></div>
+				</div>
+				<div class="item_title">
+					<h2>一入2G深似海，从此1G是路人</h2>
+				</div>
+				<div class="per_info">
+					<p>苹果在前几天的发布会中发布了新的iPad mini4，话说我也看了发布会视频，我懂还没来得急看看iPad mini4长什么样子，幻灯片就过了，真是不知为何，但是之后得到了官方的确认，是2GB RAM了，终于是2GB RAM了，终于是2GB RAM了，重要的事情说三遍！！之前用着不给力的mini1代，看着不给力的mini2代，真是揪心，iPad mini4一更新，马上就入手了。iPad mini 4 是 1.5GHz 双核 A8 芯片，2GB RAM，支持 iOS 9 中全新的分屏多任务功能，ipadmini4一上手，最大感受就是好轻6.1mm（和iPad air2一样厚）厚度简直是良心啊！从整体来看，就一句话，想要入手的就买买买！ one more thing……还是那句话，16G，谁买谁后悔！~超级推荐，值得入手！~</p>
+				</div>
+			     </div>
+                 <div class="short_comments">
+				<div class="item_user_info">
+					<a href="http://zhiyou.smzdm.com/member/8238402428" class="uesr_avatar_small lfloat">
+						<img src="http://avatarimg.smzdm.com/default/8238402428/56cc259126bbd-small.jpg"
+						width="40px" height="40px">
+					</a>
+					<a href="http://zhiyou.smzdm.com/member/8238402428"
+					class="lfloat nick_name">用户名</a>
+					
+					<div class="lfloat identify">
+						<a href="#">
+							<i class="icon-metal"></i>
+						</a>
+					</div>
+					<div class="time">2015-9-24</div>
+				</div>
+				<div class="margin_b_10 clearfix">
+					<div class="star_box">
+						<img src="images/collection.jpg">
+						<img src="images/collection.jpg">
+						<img src="images/collection.jpg">
+						<img src="images/collection.jpg">
+						<img src="images/collection.jpg">
+						<img src="images/collection.jpg">
+					</div>
+					<div class="star_status">力荐 使用时长 ：<span>短暂体验</span></div>
+				</div>
+				<div class="item_title">
+					<h2>一入2G深似海，从此1G是路人</h2>
+				</div>
+				<div class="per_info">
+					<p>苹果在前几天的发布会中发布了新的iPad mini4，话说我也看了发布会视频，我懂还没来得急看看iPad mini4长什么样子，幻灯片就过了，真是不知为何，但是之后得到了官方的确认，是2GB RAM了，终于是2GB RAM了，终于是2GB RAM了，重要的事情说三遍！！之前用着不给力的mini1代，看着不给力的mini2代，真是揪心，iPad mini4一更新，马上就入手了。iPad mini 4 是 1.5GHz 双核 A8 芯片，2GB RAM，支持 iOS 9 中全新的分屏多任务功能，ipadmini4一上手，最大感受就是好轻6.1mm（和iPad air2一样厚）厚度简直是良心啊！从整体来看，就一句话，想要入手的就买买买！ one more thing……还是那句话，16G，谁买谁后悔！~超级推荐，值得入手！~</p>
+				</div>
+			     </div>
+			</div>
+			<div class="content" id="tabs_content2" >
+				<div class="item_space purchase_channel">
+					<h2 class="purchase_title clearfix">购买渠道</h2>
+					<div class="purchase_channel_title">
+						<div class="purchase_mall">网上商城</div>
+						<div class="purchase_name">商品名称</div>
+						<div class="purchase_style">类型</div>
+						<div class="purchase_price">价格</div>
+						<div class="purchase_go"></div>
+					</div>
+					<div class="purchase_channel_box">
+						<div class="purchase_mall"><img alt="1号店" src="http://y.zdmimg.com/201406/26/1edf2df4.jpg_d200.jpg" width="90"></div>
+						<div class="purchase_right">
+                <div class="purchase_item">
+                    <div class="purchase_name">
+                        <a href="http://www.smzdm.com/gourl/4D8DC55DA67B95CA/AA_WK_0" target="_blank">苹果 /Apple iPad mini4平板电脑 WiFi版 支...</a>
+                                            </div>
+                    <div class="purchase_style">第三方</div>
+                    <div class="purchase_price">￥2838</div>
+                    <div class="purchase_go">
+                       <a href="#" class="button">去购买</a>
+                    </div>
+                </div>
+                            </div>
+					</div>
+					<div class="purchase_channel_box">
+						<div class="purchase_mall"><img alt="1号店" src="http://y.zdmimg.com/201502/11/18b9fc1c.jpg_d200.jpg" width="90"></div>
+						<div class="purchase_right">
+                <div class="purchase_item">
+                    <div class="purchase_name">
+                        <a href="http://y.zdmimg.com/201406/26/1edf2df4.jpg_d200.jpg" target="_blank">苹果 /Apple iPad mini4平板电脑 WiFi版 支...</a>
+                                            </div>
+                    <div class="purchase_style">自营</div>
+                    <div class="purchase_price">￥3438</div>
+                    <div class="purchase_go">
+                       <a href="#" class="button">去购买</a>
+                    </div>
+                </div>
+                            </div>
+					</div>
+				</div>
+
+			</div>
+			<div class="content" id="tabs_content3">
+			<div  class="clearfix tabs">
+			    <div class="news_nav">
+				<ul  >
+					<li><a href="#tabc-1">黑榜</a></li>
+					<li class="bg_color"><a href="#tabc-2">红榜</a></li>
+				</ul>	
+				</div>
+				<ul class="clearfix news_title">
+					<li>标题</li>
+					<li>质检</li>
+					<li>生产日期/批号</li>
+				</ul>
+				<div class="news_list2">
+				<div id="tabc-1">
+  			  <ul class="reports clearfix">
+                <li> <a href="news.html">手机电池检测</a> </li>
+                <li> 稳定性和机械危险：结构不合格</li>
+                <li> <span>2014-06-01</span></li>
+             </ul> 
+              <ul class="reports clearfix">
+                <li> <a href="news.html">手机电池检测</a> </li>
+                <li> 稳定性和机械危险：结构不合格</li>
+                <li> <span>2014-06-01</span></li>
+             </ul>
+        </div>
+        <div id="tabc-2">
+  			   <ul class="reports clearfix">
+                <li> <a href="news.html">手机电池检测</a> </li>
+                <li> 稳定性和机械危险：结构合格</li>
+                <li> <span>2014-06-01</span></li>
+             </ul> 
+              <ul class="reports clearfix">
+                <li> <a href="news.html">手机电池检测</a> </li>
+                <li> 稳定性和机械危险：结构合格</li>
+                <li> <span>2014-06-01</span></li>
+             </ul>
+        </div>         	
+  		</div><!--news_list结束-->
+  		</div>
+			</div>
+			<div class="content" id="tabs_content4">
+				<div class="p-parameter ">
+					<ul class="p-parameter-list clearfix">
+						<li>商品名称:ipad mini2</li>
+						<li>商品编号：996997</li>
+						<li>品牌：Apple</li>
+						<li>商品产地：中国</li>
+						<li>尺寸：7.1-9</li>
+						<li>硬盘：16G</li>
+						<li>屏幕分辨率：1280</li>
+						<li>摄像头像素</li>
+					</ul>
+				</div>
+				<img class="ipad" src="images/detail_ipad.jpg">
+			</div>
+			<div class="content" id="tabs_content5">
+				<div class="news_list">
+  			  <ul>
+          <li><span>2014-06-01</span> <a href="news.html">质检总局局长支树平在京会见智利农业部长富尔切先生一行！</a></li>
+          <li><span>2014-06-01</span><a href="news.html">质检总局等八部门启动“2016年农资打假专项治理行动</a></li>
+          <li><span>2014-05-30</span><a href="news.html">质检总局发布10项新国家计量基准</a></li>
+          <li><span>2014-05-28</span><a href="news.html" title="aa">国务院关于修改部分行政法规的决定</a></li>
+          <li><span>2014-06-01</span> <a href="news.html">质检总局局长支树平在京会见智利农业部长富尔切先生一行！</a></li>
+          <li><span>2014-06-01</span><a href="news.html">质检总局等八部门启动“2016年农资打假专项治理行动</a></li>
+          <li><span>2014-05-30</span><a href="news.html">质检总局发布10项新国家计量基准</a></li>
+          <li><span>2014-05-28</span><a href="news.html" title="aa">国务院关于修改部分行政法规的决定</a></li>
+        </ul>        	
+  		</div><!--news_list结束-->
+			</div>
+			</div>
+		</div>
+		<div class="hr_15"></div>
+	
+	</div>
+</div><!--des_info结束-->
+</div><!--wrap结束-->
+<div class="copyright">
+	<div class="copyright_content">
+		<ul>
+			<li><a href="#">关于</a>
+                  <ul>
+          <li>品牌故事</li>
+          <li>联系我们</li>
+          <li>加入我们</li>
+          <li>版权声明</li>
+        </ul>
+			</li>
+			 <li><a href="#">课程</a>
+        <ul>
+           <li>数码</li>
+          <li>家电</li>
+          <li>电脑办公</li>
+          <li>服装</li>
+        </ul>
+      </li>
+      <li><a href="#">关注</a>
+        <ul>
+          <li>新浪微博</li>
+          <li>腾讯微博</li>
+          <li>企业微信</li>
+          <li>QQ空间</li>
+        </ul>
+      </li>
+      <li><a href="#">留言</a>
+        <ul>
+          <li>意见反馈</li>
+          <li>问题留言</li>
+          <li>媒体联络</li>
+          <li>在线客服</li>
+        </ul>
+      </li>
+			<li><a href="#"><img src="images/weixin.png"/> 微信关注</a>
+                   <ul>
+                   	<li><img src="images/qrcode.jpg"></li>
+                   </ul>
+			</li>
+		</ul>
+	</div>
+</div>
+</body>
+</html>

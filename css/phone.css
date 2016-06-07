@@ -1,0 +1,28 @@
+.products_list{
+	display: block;
+	clear: both;
+	overflow:hidden
+}
+.products_list .item {
+width: 25%;
+margin-bottom: 10px;
+}
+.item {
+float: left;
+height: 265px;
+position: relative;
+}
+.item_cont {
+padding: 0 15px;
+height: 260px;
+}
+.img {
+height: 170px;
+text-align: center;
+}
+.img_item img {
+height: 170px;
+}
+.item p {
+line-height: 20px;
+}
